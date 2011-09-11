@@ -414,7 +414,8 @@ var requirejs, require, define;
                 defined: makeContextModuleFunc(context.requireDefined, relModuleMap),
                 specified: makeContextModuleFunc(context.requireSpecified, relModuleMap),
                 ready: req.ready,
-                isBrowser: req.isBrowser
+                isBrowser: req.isBrowser,
+                has: req.has
             });
             //Something used by node.
             if (req.paths) {
